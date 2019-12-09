@@ -83,8 +83,9 @@ void parentSighandler(int sig) {
 int main(int argc, char *argv[]) {
 	printf("Start...\n");
 
-	if(argc != 2) {
+	if(argc != 3) {
 		printf("Niet het juiste aantal argumenten!\n");
+		printf("(1) #maxSeconden (2) opties\nd: default\ni: ignore\ns: uitschrijven boodschap\nS: speciefieke actie + zombie-kind laten verdwijnen\n");
 		exit(-1);
 	}
 
